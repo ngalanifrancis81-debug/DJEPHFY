@@ -1,0 +1,108 @@
+{
+  "theme": "light",
+  "project_name": "Djeph",
+  "target_audience": "Individuals and professionals in Douala, Cameroon. Mobile-first usage.",
+  "vibe": "Warm, trustworthy, modern, culturally anchored (African accent) but highly professional.",
+  "typography": {
+    "headings": "Manrope",
+    "body": "Inter",
+    "rules": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-[#1A1A2E]",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-[#1A1A2E]",
+      "h3": "text-xl sm:text-2xl font-semibold text-[#1A1A2E]",
+      "body": "text-base sm:text-lg leading-relaxed text-[#4A4A5A]",
+      "labels": "text-xs sm:text-sm uppercase tracking-[0.2em] font-bold text-[#D4822A]"
+    }
+  },
+  "colors": {
+    "background": {
+      "base": "#FDF8F0",
+      "surface": "#FFFFFF",
+      "glass": "bg-[#FDF8F0]/80 backdrop-blur-xl"
+    },
+    "primary": {
+      "main": "#D4822A",
+      "hover": "#B5522B",
+      "light": "#FDEEDC"
+    },
+    "secondary": {
+      "main": "#1A1A2E",
+      "hover": "#2D2D44"
+    },
+    "accent": {
+      "whatsapp": "#25D366",
+      "whatsappHover": "#1EBE53",
+      "terracotta": "#B5522B",
+      "forest": "#2A5C3F"
+    },
+    "text": {
+      "main": "#1A1A2E",
+      "muted": "#4A4A5A",
+      "inverse": "#FFFFFF"
+    },
+    "border": "#E5DCD0"
+  },
+  "layouts": {
+    "strategy": "Mobile-First 'Bento' Grid",
+    "spacing": "Generous padding: p-6 to p-12 on desktop, p-4 on mobile. Elements need breathing room.",
+    "containers": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "grids": {
+      "services": "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6",
+      "steps": "grid grid-cols-1 md:grid-cols-3 gap-8",
+      "about": "grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+    },
+    "header": "Sticky top-0 z-50 backdrop-blur-xl bg-[#FDF8F0]/90 border-b border-[#E5DCD0]/50",
+    "touch_targets": "Minimum 48px height for all buttons and inputs on mobile."
+  },
+  "surface_strategies": {
+    "cards": "bg-white rounded-2xl border border-[#E5DCD0]/60 shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1 hover:border-[#D4822A]/30",
+    "inputs": "bg-white border border-[#E5DCD0] rounded-xl focus:ring-2 focus:ring-[#D4822A]/20 focus:border-[#D4822A] transition-all",
+    "buttons": "rounded-full font-semibold transition-all active:scale-95 flex items-center justify-center gap-2",
+    "glassmorphism": "Use for sticky header and floating WhatsApp button (backdrop-blur-md bg-white/80 border border-white/20)"
+  },
+  "motion": {
+    "hover": "transform transition-all duration-200 ease-out",
+    "entrance": "staggered fade-in-up for service cards and list items",
+    "micro": "button scale down on click (active:scale-95), subtle icon translation on hover (group-hover:translate-x-1)"
+  },
+  "components_instructions": {
+    "services_grid": "Cards must be clickable, showing an icon (lucide-react), the service name, and a short description. Use a soft primary tint background on hover.",
+    "contact_form": "Use Shadcn Form components (adapted for pure React/Tailwind if needed, without TSX). Must include fields: Nom, Téléphone/WhatsApp, Email, Domaine, Description, Quartier.",
+    "whatsapp_fab": "Floating Action Button fixed at bottom-right. z-[60]. Color: #25D366. Needs a subtle pulse animation.",
+    "how_it_works": "3 steps (Search, Contact, Done) represented with large numeric indicators and clear icons.",
+    "admin_panel": "Simple layout, dark sidebar (#1A1A2E), light content area (#FDF8F0). Use standard data tables with clear action buttons for managing domains and requests.",
+    "icons": "Use 'lucide-react' for all UI icons (tools, checkmarks, etc.)."
+  },
+  "image_urls": {
+    "hero_banner": {
+      "url": "https://images.unsplash.com/photo-1528901166007-3784c7dd3653?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwyfHxhZnJpY2FuJTIwcHJvZmVzc2lvbmFscyUyMHdvcmtpbmd8ZW58MHx8fHwxNzgxODQ2OTI3fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Professional working on laptop, representing modern service providers.",
+      "usage": "Hero section background or split-screen image. Ensure an overlay (bg-[#1A1A2E]/40) if text is on top."
+    },
+    "how_it_works": {
+      "url": "https://images.unsplash.com/photo-1573496782432-8690d8148c46?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODd8MHwxfHNlYXJjaHwyfHxzbWlsaW5nJTIwYWZyaWNhbiUyMHdvbWFuJTIwc21hcnRwaG9uZXxlbnwwfHx8fDE3ODQwNTMzMjB8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Smiling African woman using a smartphone.",
+      "usage": "Next to the 'How it works' steps to reinforce the mobile-first, easy booking experience."
+    },
+    "about_us": {
+      "url": "https://images.unsplash.com/photo-1594386479412-fa62932f4cdc?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTV8MHwxfHNlYXJjaHwxfHxEb3VhbGElMjBDYW1lcm9vbiUyMGNpdHl8ZW58MHx8fHwxNzg0MTcxNDc4fDA&ixlib=rb-4.1.0&q=85",
+      "description": "People walking on the street in Douala, Cameroon during daytime.",
+      "usage": "About Us section, establishing local roots and community connection in Douala."
+    }
+  },
+  "accessibility": {
+    "contrast": "Ensure all text on #D4822A buttons is #FFFFFF or #1A1A2E depending on APCA guidelines.",
+    "focus": "All focusable elements must have focus:ring-2 focus:ring-[#D4822A] focus:outline-none.",
+    "aria": "Add aria-labels to the WhatsApp floating button and icon-only buttons."
+  },
+  "universal_guidelines_for_main_agent": [
+    "Files MUST be .js or .jsx, NOT .tsx or .ts. Do not use TypeScript syntax.",
+    "Mobile-first is critical: test all flex/grid layouts with mobile sizes first (e.g., flex-col by default, md:flex-row).",
+    "All interactive and key informational elements MUST include a `data-testid` attribute (e.g., `data-testid=\"service-card-plomberie\"`, `data-testid=\"whatsapp-floating-btn\"`).",
+    "NEVER use fully transparent backgrounds for the Header. Always use `backdrop-blur-md bg-[#FDF8F0]/90`.",
+    "DO NOT use generic centered text alignment globally (`.App { text-align: center; }`). Use left-alignment for body text and only center headers when intentional.",
+    "NO EMOJI ICONS. Use `lucide-react`.",
+    "Avoid standard Vercel/Stripe stark black & white themes. Rely on the defined Warm African Color Palette (Ochre/Terracotta/Cream).",
+    "Use a structured component architecture: split UI into reusable pieces (e.g., ServiceCard, StepItem, ContactForm)."
+  ]
+}
