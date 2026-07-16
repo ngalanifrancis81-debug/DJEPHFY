@@ -21,6 +21,9 @@ db = client[os.environ['DB_NAME']]
 ADMIN_PASSWORD = os.environ.get('ADMIN_PASSWORD', 'djeph2024')
 WHATSAPP_NUMBER = os.environ.get('WHATSAPP_NUMBER', '237693819424')
 
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
+
 app = FastAPI()
 api_router = APIRouter(prefix="/api")
 
@@ -239,9 +242,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-logger = logging.getLogger(__name__)
 
 
 @app.on_event("shutdown")
